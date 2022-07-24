@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script defer src="./main.js"></script>
+    <title>pokemon game</title>
+</head>
+<body>
+
+    
+    
+    
+</body>
+
+
+
+<template id="start-game-template">
+    <div id="start" class="start disable-select">
+        <h1 class="start__title">POKE MEMORIES</h1>
+        <p class="start__text--select">Select mode to start game</p>
+        <div class="group-button">
+            <form class="start__form" data-start-form>
+                <input name="cardNumber" class="start__select" type="number" min="2" max="10" value="4" step="2">
+                <button class="start__button" type="submit">Play</button>
+            </form>
+            <div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template id="play-game-screen">
+    <div style="width :40%" data-container-card id="play" 
+    class="container-card disable-select">
+    </div>
+</template>
+
+
+<template id="card-screen">
+    <div class="card" data-card-value>
+        <div class="card__inner" data-card-inner>
+            <div data-card-face="back" class="card__face card__face--back"></div>
+            <div data-card-face="front" class="card__face card__face--front"></div>
+        </div>
+    </div>
+</template>
+
+
+</html>
