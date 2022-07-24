@@ -27,6 +27,8 @@ const formSelectGame = startGameScreen.querySelector("[data-start-form]");
 const playGameScreen = playGameTemplate.content.cloneNode(true);
 const containerCard = playGameScreen.querySelector("[data-container-card]");
 
+alert('Hello Lan'); 
+
 
 let rules = []; // * chứa 2 thẻ.  
 
